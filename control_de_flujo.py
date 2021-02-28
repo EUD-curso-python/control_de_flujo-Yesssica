@@ -14,7 +14,14 @@ while n < 100:
 
 Hasta el número 50.
 """
-
+rango = list(range(1,51))
+p = ''
+acumulado = list()
+for n in (rango):
+  p = p + ' ' + str(n)
+  p= p.lstrip()
+  acumulado.append(p)
+print(acumulado)
 
 
 
@@ -141,8 +148,8 @@ while n <= 100:
   while i < 3:
     cubo = cubo*n
     i += 1
-    cubos.append(cubo)
-    n +=1
+  cubos.append(cubo)
+  n +=1
 
 
 
@@ -158,8 +165,9 @@ while n <= 10:
   while i < n:
     serie = serie + '2'
     i+=1
-    suma_2s = suma_2s + int(serie)
-    n += 1
+  suma_2s = suma_2s + int(serie)
+  n += 1
+print(suma_2s)
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 
 cantidad máxima de asteriscos de 30. 
