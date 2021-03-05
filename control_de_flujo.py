@@ -40,9 +40,21 @@ separados por coma, así:
 '134,268,...'
 
 """
+n=0
+tabla100 =''
+i = 1
+multiplo = 134
 
-
-
+while i <= 10000:
+  if i % multiplo == 0:
+    tabla100 = tabla100 +str(i)+ ','
+    n +=1
+    i +=1
+  else:
+    i +=1
+  if n > 9:
+    break 
+print(tabla100)
 
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
@@ -92,9 +104,10 @@ Nota: Un número primo es un número entero que no se puede calcular multiplican
 otros números enteros.
 """
 
+#if fact ==0:
+ # primos.append(n)
 
-
-
+#n +=1
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
 Fibonacci.
@@ -104,10 +117,11 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 [0, 1, 1, 2, 3, 5, 8, ...]
 
 """
-
-
-
-
+n=2
+fibonacci=[0,1]
+while n < 6:
+  fibonacci.append((n-1)+(n-2))
+  n +=1
 
 """Guardar en `factorial` el factorial de 30
 El factorial (símbolo:!) Significa multiplicar todos los números enteros desde
